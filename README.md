@@ -1,6 +1,6 @@
 # Products-Client
 ## Setup
-1. Navigate to the folder you want to clone the folder into.
+1. Navigate to the folder you want to clone the repository into.
 
 2. Clone the project locally using the command 'git clone https://github.com/orinayo/products-client.git'
 
