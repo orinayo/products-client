@@ -14,7 +14,9 @@ const SideBar = () => {
         </li>
         <li className='side-nav__item'>
           <a href='https://afternoon-refuge-91691.herokuapp.com/api/v1/docs'
-            target='_blank' className='side-nav__link'>
+            target='_blank'
+            rel='noopener noreferrer'
+            className='side-nav__link'>
             <Icon name='open-book' />
             <span>View API Docs</span>
           </a>

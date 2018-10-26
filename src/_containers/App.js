@@ -9,15 +9,6 @@ import ProductDetail from '../_components/Products/ProductDetail'
 import ProductNew from '../_components/Products/ProductNew'
 
 class App extends Component {
-  constructor (props) {
-    super(props)
-
-    const { dispatch } = this.props
-    history.listen((location, action) => {
-      // clear alert on location change
-      dispatch(actions.alertActions.clear())
-    })
-  }
   render () {
     return (
       <div>
@@ -38,4 +29,11 @@ class App extends Component {
   }
 }
 
-export default connect(null, actions)(App)
+function mapStateToProps(state) {
+  const { alert } = state
+  return {
+      alert
+  }
+}
+
+export default connect(mapStateToProps, actions)(App)
