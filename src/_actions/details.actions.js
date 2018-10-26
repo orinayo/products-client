@@ -17,7 +17,7 @@ const submitDetails = values => async dispatch => {
       type: detailsConstants.CREATE_DETAILS_SUCCESS,
       data: detail
     })
-    history.push(`/products/${detail.product}/detail`)
+    history.push(`/products/${detail.product}/details`)
   } catch (err) {
     dispatch(alertActions.error(errorMessages.DETAILS_ERROR_MESSAGE))
   }
